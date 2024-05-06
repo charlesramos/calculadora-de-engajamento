@@ -1,0 +1,36 @@
+
+<html>
+<body>
+
+    <!--
+    Calculadora de Engajamento de mídia social
+    Dev. Charles Rotron [c.rotron@gmail.com]
+    2024
+    -->
+
+<form id="formulario" onsubmit="return calculoEngajamento()">
+    <input type="text" name="curtidas" id="curtidas" placeholder="Curtidas">
+    <input type="text" name="seguidores" id="seguidores" placeholder="Seguidores">
+    <button type="submit">Enviar</button>
+</form>
+
+
+<script>
+
+function calculoEngajamento() {
+
+var qt_curtidas = document.getElementById("curtidas");
+var qt_seguidores = document.getElementById("seguidores");
+
+var x = qt_curtidas.value;
+var y = qt_seguidores.value;
+
+var total = x / y * 100;
+
+    alert("olá, mundo! "+total+" %");
+    return false;
+}
+
+</script>
+</body>
+</html>
